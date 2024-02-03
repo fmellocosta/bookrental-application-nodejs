@@ -1,0 +1,5 @@
+// .eslintrc.json
+{
+    "extends": "airbnb-base",
+    "import/no-extraneous-dependencies": ["error", {"packageDir": "./"}]
+}
