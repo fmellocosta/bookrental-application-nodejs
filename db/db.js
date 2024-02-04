@@ -13,6 +13,20 @@ const users = [
     },
 ];
 
+const books = [
+    {
+        id: 1,
+        title: 'Book 1',
+        user: null,
+    },
+    {
+        id: 2,
+        title: 'Book 2',
+        user: null,
+    },
+];
+
 module.exports = {
-    users: users
+    users,
+    books
 };

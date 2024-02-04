@@ -13,7 +13,7 @@ router.get('/users', UserController.getUsers);
 router.get('/users/:userId', UserController.getUserById);
 
 // Update a user by ID
-// router.put('/users/:userId', UserController.updateUser);
+router.put('/users/:userId', UserController.updateUser);
 
 // Delete a user by ID
 // router.delete('/users/:userId', UserController.deleteUser);

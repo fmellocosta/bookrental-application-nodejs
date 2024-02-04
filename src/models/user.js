@@ -1,24 +1,14 @@
-// const db = require('../../db/db');
-
-const db = {
-    users: [
-        {
-            id: 1,
-            username: 'user1',
-            email: 'user1@example.com',
-            password: 'password1',
-        },
-        {
-            id: 2,
-            username: 'user2',
-            email: 'user2@example.com',
-            password: 'password2',
-        },
-    ]
-};
+const db = require('../../db/db');
 
 const UserModel = {
     findById: (id) => db.users.find((user) => user.id.toString() === id),
+
+    findByIdAndUpdate: (id, updatedData, options) => {
+        const user = this.findById(id);
+        if (!user) return null;
+        return user;
+    },
+
     findAll: () => db.users
 };
 
